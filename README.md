@@ -1,1 +1,5 @@
-# Local-Cravings
+### Local Cravings
+## Made by:
+---
+#### Jeffrey Sheets
+---
