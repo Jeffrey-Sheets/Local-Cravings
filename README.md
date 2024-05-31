@@ -28,3 +28,13 @@ In the registration screen the user can enter their email once and their passwor
   <br>
   Figure 1: The registration screen
 </p>
+
+#### 3.1.3 Login
+As stated before the login screen prompts the user to register for an account if they don't have one. When the user enters their credentials they are compared to the ones on in firebase and if they are found they will log the user in with all of their saved information.
+
+<p align="center">
+  <img src="Login/Login.jpg" width="200" title="Login">
+  <br>
+  <br>
+  Figure 1: The Login screen
+</p>
