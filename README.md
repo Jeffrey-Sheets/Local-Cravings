@@ -23,7 +23,7 @@ Once the user has downloaded the app onto their android device, an icon will app
 In the registration screen the user can enter their email once and their password twice. This information will create a new account in the firbase database where all their information will be stored.
 
 <p align="center">
-  <img src="Local-Cravings/Registration/Registration.jpg" width="500" title="registration">
+  <img src="Registration/Registration.jpg" width="500" title="registration">
   <br>
   <br>
   Figure 1: The registration screen
