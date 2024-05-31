@@ -23,7 +23,7 @@ Once the user has downloaded the app onto their android device, an icon will app
 In the registration screen the user can enter their email once and their password twice. This information will create a new account in the firbase database where all their information will be stored.
 
 <p align="center">
-  <img src="[Registration/Registration.jpeg](https://private-user-images.githubusercontent.com/84060666/335752484-9c5411d0-9632-456f-a484-4419fc0c3f4d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTcxOTkxMDUsIm5iZiI6MTcxNzE5ODgwNSwicGF0aCI6Ii84NDA2MDY2Ni8zMzU3NTI0ODQtOWM1NDExZDAtOTYzMi00NTZmLWE0ODQtNDQxOWZjMGMzZjRkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MzElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTMxVDIzNDAwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTkyMmY5ODg0MGM3Nzc2NTNmZWY1OGI0MDE0OGQxYTk1YjViNGY3ZDkyNmE4ZTQ1YWU0NDkxZjljNmE4MmEwN2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0._RGe0SfNaobFl0VJ4lfW9g-8nhv5g8nbChv9HpfWD-Y)" width="500" title="registration">
+  <img src="https://github.com/Jeffrey-Sheets/Local-Cravings.wiki.git" width="500" title="registration">
   <br>
   <br>
   Figure 1: The registration screen
