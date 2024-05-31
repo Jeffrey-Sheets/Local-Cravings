@@ -20,4 +20,11 @@ Everyone has cravings when they are hungry. But when you're on vacation you don'
 Once the user has downloaded the app onto their android device, an icon will appear on their home screen. From there they can click on their icon where they will be presented with the login screen which will prompt them to create an account if they don't already have one.
 
 #### 3.1.2 Registration
+In the registration screen the user can enter their email once and their password twice. This information will create a new account in the firbase database where all their information will be stored.
 
+<p align="center">
+  <img src="Registration/Registration.jpeg" width="500" title="registration">
+  <br>
+  <br>
+  Figure 1: The registration screen
+</p>
