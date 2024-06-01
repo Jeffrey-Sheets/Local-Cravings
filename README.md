@@ -38,3 +38,13 @@ As stated before the login screen prompts the user to register for an account if
   <br>
   Figure 1: The Login screen
 </p>
+
+#### 3.1.4 Dashboard
+The dashboard will use googles placeID API to find the users location and it will display the location at the top of the screen. Below that will be the option to filter out restaurants based on certain criteria like food type, distance, and star rating. Under that it will display the pictures of the restaurants that you can scroll through and choose which one you want to look at. Finally there are selections at the bottom of the screen to search for specific restaurants, the profile of the user, the restaurants the user has favorited, and the settings for the app.
+
+<p align="center">
+  <img src="Dashboard/Dashboard.jpg" width="200" title="Dashboard">
+  <br>
+  <br>
+  Figure 1: The Dashboard
+</p>
