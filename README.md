@@ -50,3 +50,8 @@ The dashboard will use googles placeID API to find the users location and it wil
   <br>
   Figure 1: The Dashboard
 </p>
+
+
+#### Planning for the project
+
+Jira: https://cis350project.atlassian.net
