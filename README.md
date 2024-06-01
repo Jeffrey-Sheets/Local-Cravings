@@ -2,6 +2,8 @@
 ### Made by:
 ---
 #### Jeffrey Sheets
+#### Isaiah Sabin
+#### Gabriel Bushong
 ---
 
 ## 1 Introduction
