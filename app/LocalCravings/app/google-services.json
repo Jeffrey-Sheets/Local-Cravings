@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011735395079",
+    "project_id": "local-cravings",
+    "storage_bucket": "local-cravings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011735395079:android:f201a68279e56c096363a2",
+        "android_client_info": {
+          "package_name": "com.example.localcravings"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj19cjg-LzCqWqFc7UF9T9xXIW9_ryoGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
