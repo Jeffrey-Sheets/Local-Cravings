@@ -23,6 +23,8 @@ class NewAccountViewModel : ViewModel() {
 
     // default firebase vals
 
+    val defaultFavorites = hashMapOf("favorites" to 0)
+
     fun doSignUp(email: String, password: String){
         viewModelScope.launch(Dispatchers.IO) {
             auth.createUserWithEmailAndPassword(email, password)
@@ -38,6 +40,9 @@ class NewAccountViewModel : ViewModel() {
     }
 
     private fun createNewUser(tempName: HashMap<String, String>){
+        db.collection("accounts").document(auth.uid!!).set({val test = "test"})
+        db.collection("accounts/${auth.uid!!}")
+            .document("favorites").set(defaultFavorites)
 
     }
 
