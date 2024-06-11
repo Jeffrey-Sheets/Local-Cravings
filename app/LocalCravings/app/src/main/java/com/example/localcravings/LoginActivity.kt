@@ -1,7 +1,7 @@
 package com.example.localcravings
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -16,10 +16,11 @@ import com.google.android.material.snackbar.Snackbar
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var myViewModel: LoginViewModel
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.loginactivity)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -28,11 +29,11 @@ class LoginActivity : AppCompatActivity() {
 
         myViewModel = ViewModelProvider(this)[LoginViewModel::class.java]
 
-        val loginBtn = findViewById<Button>(R.id.login_button)
-        val registerBtn = findViewById<Button>(R.id.register_button)
+        val loginBtn = findViewById<Button>(R.id.loginButton)
+        val registerBtn = findViewById<Button>(R.id.registerButton)
 
-        val email = findViewById<EditText>(R.id.user_email)
-        val password = findViewById<EditText>(R.id.user_password)
+        val email = findViewById<EditText>(R.id.userEmail)
+        val password = findViewById<EditText>(R.id.userPassword)
 
         email.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}

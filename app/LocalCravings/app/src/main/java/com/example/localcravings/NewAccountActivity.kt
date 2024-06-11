@@ -1,5 +1,6 @@
 package com.example.localcravings
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -14,10 +15,11 @@ import com.google.android.material.snackbar.Snackbar
 class NewAccountActivity : AppCompatActivity(){
     private lateinit var myViewModel: NewAccountViewModel
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_new_account)
+        setContentView(R.layout.new_account_activity)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -26,12 +28,11 @@ class NewAccountActivity : AppCompatActivity(){
 
         myViewModel = ViewModelProvider(this)[NewAccountViewModel::class.java]
 
-        val SignUpBtn = findViewById<Button>(R.id.signup_button)
+        val SignUpBtn = findViewById<Button>(R.id.signupButton)
 
-        val username = findViewById<EditText>(R.id.username)
-        val email = findViewById<EditText>(R.id.email_address)
+        val email = findViewById<EditText>(R.id.emailAddress)
         val actualPassword = findViewById<EditText>(R.id.password)
-        val password = findViewById<EditText>(R.id.verified_password)
+        val password = findViewById<EditText>(R.id.verifiedPassword)
 
         myViewModel.isCreated.observe(this){
             if (myViewModel.isCreated.value!!) {
@@ -43,18 +44,18 @@ class NewAccountActivity : AppCompatActivity(){
             } else
                 if(!myViewModel.isCreated.value!!)
                     Snackbar.make(
-                        username, "Error: A server error has occurred.",
+                        email, "Error: A server error has occurred.",
                         Snackbar.LENGTH_LONG
                     ).show()
         }
 
         myViewModel.account.observe(this){
             if (it && myViewModel.isInitialized) {
-                myViewModel.createNewUserDoc(username.text.toString())
+                myViewModel.createNewUserDoc(email.text.toString())
             } else {
                 if(myViewModel.isInitialized)
                     Snackbar.make(
-                        username, "Error: Account could not be created.",
+                        email, "Error: Account could not be created.",
                         Snackbar.LENGTH_LONG
                     ).show()
             }
@@ -77,9 +78,6 @@ class NewAccountActivity : AppCompatActivity(){
                     password, "Error: Please enter an email address.",
                     Snackbar.LENGTH_LONG
                 ).show()
-            else if(username.text.toString().isEmpty())
-                Snackbar.make(username, "Error: Please enter a nickname.",
-                    Snackbar.LENGTH_LONG).show()
             else
                 myViewModel.doSignUp(email.text.toString(), password.text.toString())
         }

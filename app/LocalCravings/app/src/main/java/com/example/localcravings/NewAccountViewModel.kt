@@ -21,9 +21,8 @@ class NewAccountViewModel : ViewModel() {
     val isCreated: LiveData<Boolean> get() = _isCreated
     var isInitialized: Boolean = false
 
-    // default firebase vals
-
-    val defaultFavorites = hashMapOf("favorites" to 0)
+    // default firebase val
+    private val defaultFavorites = hashMapOf("favorites" to 0)
 
     fun doSignUp(email: String, password: String){
         viewModelScope.launch(Dispatchers.IO) {
@@ -49,7 +48,7 @@ class NewAccountViewModel : ViewModel() {
     fun createNewUserDoc(username: String) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val tempName = hashMapOf("name" to username)
+                val tempName = hashMapOf("email" to username)
                 createNewUser(tempName)
 
                 isInitialized = true
