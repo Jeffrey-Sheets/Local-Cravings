@@ -28,7 +28,7 @@ class NewAccountActivity : AppCompatActivity(){
 
         myViewModel = ViewModelProvider(this)[NewAccountViewModel::class.java]
 
-        val SignUpBtn = findViewById<Button>(R.id.signupButton)
+        val signUpBtn = findViewById<Button>(R.id.signupButton)
 
         val email = findViewById<EditText>(R.id.emailAddress)
         val actualPassword = findViewById<EditText>(R.id.password)
@@ -61,7 +61,7 @@ class NewAccountActivity : AppCompatActivity(){
             }
         }
 
-        SignUpBtn.setOnClickListener{
+        signUpBtn.setOnClickListener{
             if(actualPassword.text.toString() != password.text.toString())
                 Snackbar.make(
                     password, "Error: Passwords do not match.",
