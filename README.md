@@ -14,6 +14,32 @@ Everyone has cravings when they are hungry. But when you're on vacation you don'
 
 **Local Cravings** will be primarily programmed in Kotlin. While we will also utilize googles placeID API to aquire the information on restraunts in a certain area. For the server side the app will use Firebase to store information like the profiles of the users and which restaurants they have favorited.
 
+### 2.1 Sequence Diagram
+<p align="center">
+  <img src="Diagrams/Sequence Diagram.jpg" width="200" title="registration">
+  <br>
+  <br>
+  Figure 1: The registration screen
+</p>
+
+### 2.2 Class Diagram
+<p align="center">
+  <img src="Diagrams/Class Diagram.jpg" width="200" title="registration">
+  <br>
+  <br>
+  Figure 1: The registration screen
+</p>
+
+
+### 2.3 Communication Diagram
+<p align="center">
+  <img src="Diagrams/Communication Diagram.jpg" width="200" title="registration">
+  <br>
+  <br>
+  Figure 1: The registration screen
+</p>
+
+
 ## 3 User Guide
 
 ### 3.1 Client Side
@@ -51,7 +77,8 @@ The dashboard will use googles placeID API to find the users location and it wil
   Figure 1: The Dashboard
 </p>
 
-
+#### Risk Analysis and Retrospection
+The risks for this project were pretty great. I believe the scope of the project was too great and my expectations were too high. The biggest problems when working on this project was not only the scope but the use of third party software like Firebase and Googles PlaceID API. These were too complex and resulted in too many bugs for us to handle in the short time for this project. In the end there should have been much more time devoted to working out bugs. Communication and planning were also severly lacking for this project. This project is not complete due to the many faults I listed before. The only things that were done were the Login, Registration, and certain aspects of the Dashboard. Things like the Favorite button, the search bar, and even the list of restaurants have all gone unfinished.
 #### Planning for the project
 
 Jira: https://cis350project.atlassian.net
