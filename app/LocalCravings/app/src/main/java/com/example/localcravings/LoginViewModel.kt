@@ -27,7 +27,8 @@ class LoginViewModel: ViewModel() {
                 .addOnSuccessListener {
                     isInitialized = true
                     _userID.postValue(it.user?.uid)
-                }.addOnFailureListener {
+                }
+                .addOnFailureListener {
                     isInitialized = true
                     _userID.value = null
                 }
